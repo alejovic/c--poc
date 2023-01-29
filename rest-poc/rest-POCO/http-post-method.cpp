@@ -17,9 +17,7 @@ using namespace std;
 int main() {
     try {
         // prepare session
-        Poco::URI uri("https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m");
-
-        //Poco::URI uri("https://www.google.com");
+        Poco::URI uri("https://httpbin.org/post");
 
         std::cout << "Host = " << uri.getHost() << std::endl;
         std::cout << "Port = " << uri.getPort() << std::endl;
@@ -75,7 +73,7 @@ int main() {
         std::cout << std::endl;
 
         std::cout << "JSON -> ";
-        std::cout << "current_weather JSON content: " << (*object).get("current_weather").toString();
+        std::cout << "specific JSON content data->  " << (*object).get("data").toString();
 
     } catch (Exception &ex) {
         std::cerr << ex.displayText() << std::endl;
