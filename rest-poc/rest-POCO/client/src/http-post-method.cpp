@@ -50,7 +50,7 @@ int main() {
         std::cout << "Request ContentLength = " << request.getContentLength() << std::endl;
 
         // send request
-        std::ostream& outputStream = session.sendRequest(request);
+        std::ostream &outputStream = session.sendRequest(request);
         user.stringify(outputStream);
 
         // get response

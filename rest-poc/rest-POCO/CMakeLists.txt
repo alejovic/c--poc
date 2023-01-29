@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.25)
 project(poc)
 
-add_executable(poc http-get-method.cpp)
-#add_executable(poc http-post-method.cpp)
+#add_executable(poc client/src/http-get-method.cpp)
+#add_executable(poc client/src/http-post-method.cpp)
+
+add_executable(poc server/src/hello-world-server.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 

@@ -74,7 +74,7 @@ Building the CODE
 ```cmake
 cmake_minimum_required(VERSION 3.25)
 project(poc)
-add_executable(poc http-get-method.cpp)
+add_executable(poc client/src/http-get-method.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
