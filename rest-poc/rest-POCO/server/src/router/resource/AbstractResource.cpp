@@ -87,7 +87,7 @@ namespace Server {
         void AbstractResource::handle_get(Poco::Net::HTTPServerRequest &,
                                           Poco::Net::HTTPServerResponse &response) {
             std::cout << "Server::Resource::AbstractResource::handle_get started." << std::endl;
-            handleHttpStatusCode(501, response);
+            handleHttpStatusCode(Poco::Net::HTTPResponse::HTTP_NOT_IMPLEMENTED, response);
             std::ostream &errorStream = response.send();
             errorStream.flush();
         }
@@ -95,7 +95,7 @@ namespace Server {
         void AbstractResource::handle_put(Poco::Net::HTTPServerRequest &,
                                           Poco::Net::HTTPServerResponse &response) {
             std::cout << "Server::Resource::AbstractResource::handle_put started." << std::endl;
-            handleHttpStatusCode(501, response);
+            handleHttpStatusCode(Poco::Net::HTTPResponse::HTTP_NOT_IMPLEMENTED, response);
             std::ostream &errorStream = response.send();
             errorStream.flush();
         }
@@ -103,7 +103,7 @@ namespace Server {
         void AbstractResource::handle_post(Poco::Net::HTTPServerRequest &,
                                            Poco::Net::HTTPServerResponse &response) {
             std::cout << "Server::Resource::AbstractResource::handle_post started." << std::endl;
-            handleHttpStatusCode(501, response);
+            handleHttpStatusCode(Poco::Net::HTTPResponse::HTTP_NOT_IMPLEMENTED, response);
             std::ostream &errorStream = response.send();
             errorStream.flush();
         }
@@ -111,7 +111,7 @@ namespace Server {
         void AbstractResource::handle_delete(Poco::Net::HTTPServerRequest &,
                                              Poco::Net::HTTPServerResponse &response) {
             std::cout << "Server::Resource::AbstractResource::handle_delete started." << std::endl;
-            handleHttpStatusCode(501, response);
+            handleHttpStatusCode(Poco::Net::HTTPResponse::HTTP_NOT_IMPLEMENTED, response);
             std::ostream &errorStream = response.send();
             errorStream.flush();
         }
