@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(PROJECT_NAME "rest-POCO-server")
 #set(PROJECT_EXECUTABLE "src/main.cpp")
 set(PROJECT_EXECUTABLE "src/model/db/main.cpp")
+#set(PROJECT_EXECUTABLE "src/model/orm/main.cpp")
 # set(PROJECT_EXECUTABLE "server/src/hello-world-server.cpp")
 
 ## Including source code of the project

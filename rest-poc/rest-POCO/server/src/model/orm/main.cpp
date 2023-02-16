@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
             "host=localhost user=postgres password=postgres dbname=nodejs port=55432");
 
 
-    //Poco::ActiveRecord::Context::Ptr pContext = new Poco::ActiveRecord::Context(session);
+    Poco::ActiveRecord::Context::Ptr pContext = new Poco::ActiveRecord::Context(session);
     Poco::Data::Statement statement(session);
     statement << "SELECT * FROM USERS";
     statement.execute(); //OK
