@@ -2,6 +2,7 @@
 // Created by avictoria on 29/01/23.
 //
 
+#include <iostream>
 #include "Factory.h"
 #include "ApplicationFactory.h"
 

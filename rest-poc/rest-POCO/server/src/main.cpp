@@ -5,6 +5,7 @@
 #include "router/MyRouter.h"
 
 int main(int argc, char *argv[]) {
+    setenv("custom.environment", "local", true);
 
     Server::MyServer server;
 

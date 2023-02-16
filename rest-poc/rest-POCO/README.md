@@ -89,3 +89,51 @@ target_link_libraries(poc PUBLIC Poco::Net Poco::Util Poco::JSON)
 
 
 ```
+
+postgres ->
+$ sudo pacman -S libpqxx
+
+poco -> Modern, powerful open source C++ class libraries for building network- and internet-based applications that 
+run on desktop, server, mobile and embedded systems.
+
+Archlinux:
+$ sudo pacman -Ss poco
+It does not have postgres..
+The default install location is /usr/include/ on Linux
+````cmake
+# set(PocoNet_DIR "/usr/include/Poco")
+# set(PocoFoundation_DIR "/usr/include/Poco")
+````
+
+conan -> package manager
+$sudo pacman -Ss conan
+conan install -r conancenter poco/1.12.4@
+
+from git:
+$ git clone https://github.com/pocoproject/poco
+$ cmake .
+
+Installing
+The POCO C++ Libraries headers and libraries can be optionally be installed by building the install target.
+
+$ sudo cmake --build . --target install
+The default install location is /usr/local/ on Linux can be overridden 
+by setting the CMAKE_INSTALL_PREFIX CMake variable.
+
+````cmake
+set(PocoNet_DIR "/usr/local/include/Poco")
+set(PocoFoundation_DIR "/usr/local/include/Poco")
+````
+
+Requirements
+- CMake
+- CMake Extension for C++ in VSCode
+- C++ Extension in CMake
+- GCC Compiler
+
+C/C++ IntelliSense, debugging, and code browsing.
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+PlatformIO IDE
+https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
+CMake Tools
+https://open-vsx.org/extension/ms-vscode/cmake-tools
