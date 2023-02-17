@@ -1,2 +1,5 @@
-# c--poc
-C++ Proof of Concept Repository
+# C++ PoC
+
+REST
+1. Poco Libs -> project: rest-POCO
+2. 

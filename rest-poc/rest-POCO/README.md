@@ -124,16 +124,3 @@ by setting the CMAKE_INSTALL_PREFIX CMake variable.
 set(PocoNet_DIR "/usr/local/include/Poco")
 set(PocoFoundation_DIR "/usr/local/include/Poco")
 ````
-
-Requirements
-- CMake
-- CMake Extension for C++ in VSCode
-- C++ Extension in CMake
-- GCC Compiler
-
-C/C++ IntelliSense, debugging, and code browsing.
-https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
-PlatformIO IDE
-https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
-CMake Tools
-https://open-vsx.org/extension/ms-vscode/cmake-tools
