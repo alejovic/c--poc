@@ -8,11 +8,3 @@ project(HelloApp
         
 add_executable(HelloAppBinary main.cpp)
 target_compile_features(HelloAppBinary PRIVATE cxx_std_20)
-
-# build with CMake
-# cmake .
-# $ /build/cmake .. 
-
-# generate binary
-# $ cd build
-# $ make

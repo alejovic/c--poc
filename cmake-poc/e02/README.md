@@ -42,4 +42,12 @@ $ cd /build
 $ cmake -G "Ninja" ..
 $ ninja
 $ ./HelloAppBinary
+
+Generic
+$ cmake -G "Ninja" .. OR cmake ..
+$ cmake -- build.
+
+cmake --build . --target clean
+cmake --build . --target HelloAppBinary
+
 ````                               
